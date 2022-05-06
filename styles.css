@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(0.25turn, rgb(78, 136, 174), rgb(22, 22, 150));
+  color: aliceblue;
+}
+.home {
+  margin: 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px 0;
+}
+.nav-menu {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 22px;
+}
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn span {
+  font-size: medium;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-home {
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 20px 30px;
+}
+.p {
+  opacity: 0.7;
+}
+.container-home h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.container-home h1 {
+  font-weight: 700;
+}
+
+hr {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.img {
+  display: block;
+  align-items: right;
+  margin-top: 20px;
+}
+
+button {
+  color: aliceblue;
+  background-color: rgba(255, 90, 1, 0.851);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  padding: 15px;
+}
+.btn {
+  font-size: medium;
+}
+
+.btn-trail {
+  background: inherit;
+  border: solid 0.5px rgba(255, 255, 255, 0.3);
+}
+.about {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos__raw {
+  padding: 0 100px 0;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 10px;
+  flex-grow: 3;
+}
+.logos__item {
+  display: grid;
+  place-items: center;
+  width: 261px;
+  height: 82px;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.img-about {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newtransaction {
+  position: absolute;
+  background: white;
+  box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06);
+  border-radius: 10px;
+  bottom: -1033px;
+  left: 160px;
+}
+.newtransaction-contacts {
+  display: flex;
+  align-items: flex-end;
+}
+.newtransaction__title {
+  padding: 20px;
+}
+.newtransaction-contacts {
+  padding: 0 20px 10px;
+  cursor: pointer;
+}
+.new-transfer {
+  display: grid;
+  place-items: center;
+  padding: 0 0 5px;
+}
+.new-transfer--text {
+  vertical-align: top;
+  font-size: 13px;
+}
+.contact-transaction {
+  padding: 5px;
+  text-align: center;
+}
+.newtransaction-send {
+  padding: 0 10px 0;
+  margin: 0 10px 0;
+}
+.contact-transaction--name {
+  font-size: 13px;
+}
+.new-transaction--sum {
+  border: solid 1px blue;
+  border-radius: 3px;
+  padding: 15px;
+  width: 150px;
+  text-align: right;
+  font-size: 15px;
+}
+.btn-transfer {
+  width: 150px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.content-about {
+  display: grid;
+  place-items: left;
+  width: 600px;
+  margin: 40px 0 0 100px;
+}
+.content-about__title {
+  text-align: left;
+  font-size: 50px;
+}
+.content-about__container--text {
+  height: 100px;
+  font-size: 20px;
+  font-weight: 300;
+  width: 600px;
+}
+
+.chbox {
+  display: none;
+}
+.content-about--chboxs {
+  display: flex;
+}
+.label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.label::before {
+  position: relative;
+  content: '';
+  background: url(img/circle.png) center/cover no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  transition: all ease 0.5s;
+}
+.label::after {
+  position: absolute;
+  content: '';
+  background: url(img/vector.png) center/cover no-repeat;
+  width: 13px;
+  height: 10px;
+  left: 7px;
+  top: 3px;
+  transition: all ease 0.5s;
+  transform: scale(0);
+}
+.learn-more {
+  padding: 15px 30px;
+  font-size: 20px;
+  width: 169px;
+  height: 62px;
+
+  background: #ff5a05;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #fdeee7;
+  color: #ff5a05;
+  transition: all ease 0.5s;
+}
+.cards-about {
+  width: 100%;
+  height: 500px;
+  background: url(img/bg1.png) center no-repeat;
+}
+.container-for__cards {
+  display: flex;
+  margin-top: 100px;
+  gap: 0 50px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.04);
+  width: 200px;
+  height: 150px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 20px;
+  background: #fff;
+  transition: all ease 0.5s;
+}
+.card-number {
+  color: #1f37ff;
+  font-size: 55px;
+  font-weight: 700;
+}
+.card-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.card:hover {
+  transition: all ease 0.5s;
+  margin-top: -10px;
+}
+
+.testimonial {
+  background: #fff9f5;
+  width: 100%;
+  height: 700px;
+}
+.container-for__content {
+  text-align: center;
+  color: black;
+  margin: 50px;
+}
+.content-testimonial {
+  display: inline-block;
+  background: white;
+  border: 2px solid rgba(66, 82, 207, 0.1);
+  border-radius: 10px;
+  width: 358px;
+  height: 284px;
+  vertical-align: top;
+  text-align: left;
+  padding: 20px 30px;
+  transition: all ease 0.5s;
+  margin-top: 20px;
+}
+.content-testimonial p {
+  padding-top: 20px;
+  font-weight: 300;
+}
+.content-testimonial h2 {
+  font-weight: 400;
+}
+.content-testimonial img {
+  padding-bottom: 20px;
+  width: 58px;
+  height: 75px;
+}
+
+.content-text .content-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff5a05;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  letter-spacing: 0.05em;
+  line-height: 160%;
+}
+.content-text {
+  border: none;
+  background: inherit;
+  text-align: left;
+  padding-left: 10px;
+}
+.content-blue {
+  background-color: #4252cf;
+}
+.content-testimonial:hover {
+  transition: all ease 0.5s;
+  margin-top: -1px;
+}
+.testimonial-userreview {
+  background: whitesmoke;
+  color: black;
+  margin-top: -10px;
+}
+.userreview-title {
+  text-align: center;
+  margin: 50px;
+}
+.userreview-content {
+  display: flex;
+}

@@ -6,7 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lending Page</title>
     <script type="module" src="index.js"></script>
-    <style src="index.css"></style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img src="logo1.png" alt="logo" />
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Testimonial</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-primary"><span>Get Started</span></button>
+      </header>
+      <main>
+        <div class="home">
+          <div class="container-home">
+            <h2>inspiration technology.</h2>
+            <h1>
+              Runs faster. <br />Costs less and<br />
+              never breaks.
+            </h1>
+            <hr style="background: aliceblue; border: 0; height: 1px" />
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              debitis vitae sequi nam cumque suscipit, enim itaque a maiores quo
+              rerum ea architecto officiis molestias consectetur voluptatum
+              saepe commodi ipsam.
+            </p>
+            <button class="btn btn-start">Get Started</button>
+            <button class="btn btn-trail">Free Trail</button>
+          </div>
+          <div class="img">
+            <img src="img1.png" alt="presentation" />
+          </div>
+        </div>
+        <div class="about">
+          <div class="logos__raw">
+            <div class="logos__item">
+              <img src="img/google.png" alt="google" />
+            </div>
+            <div class="logos__item">
+              <img src="img/amazon.png" alt="amazon" />
+            </div>
+            <div class="logos__item">
+              <img src="img/fedex.png" alt="fedex" />
+            </div>
+            <div class="logos__item">
+              <img src="img/fedx.png" alt="fedx" />
+            </div>
+            <div class="logos__item">
+              <img src="img/microsoft.png" alt="microsoft" />
+            </div>
+            <div class="logos__item">
+              <img src="img/ola.png" alt="ola" />
+            </div>
+            <div class="logos__item">
+              <img src="img/walmart.png" alt="walmart" />
+            </div>
+          </div>
+          <div class="img-about">
+            <img src="img/bespectacled.png" alt="office" />
+            <div class="newtransaction">
+              <h3 class="newtransaction__title">New transaction</h3>
+              <div class="newtransaction-contacts">
+                <div class="contact-transaction">
+                  <img src="img/anna.png" alt="anna" />
+                  <p class="contact-transaction--name">Anna</p>
+                </div>
+                <div class="contact-transaction">
+                  <img src="img/john.png" alt="john" />
+                  <p class="contact-transaction--name">John</p>
+                </div>
+                <div class="contact-transaction">
+                  <img src="img/mia.png" alt="mia" />
+                  <p class="contact-transaction--name">Mia</p>
+                </div>
+                <div class="contact-transaction">
+                  <img src="img/mike.png" alt="mike" />
+                  <p class="contact-transaction--name">Mike</p>
+                </div>
+                <div class="contact-transaction">
+                  <img src="img/monika.png" alt="monika" />
+                  <p class="contact-transaction--name">Monika</p>
+                </div>
+                <div class="new-transfer">
+                  <img src="img/add-trns.svg" alt="add-trns" class="trn-img" />
+                  <p class="new-transfer--text">Add new</p>
+                </div>
+              </div>
+              <div class="newtransaction-send">
+                <input
+                  type="text"
+                  class="new-transaction--sum"
+                  placeholder="0$"
+                />
+                <button class="btn btn-transfer">Send the transfer</button>
+              </div>
+            </div>
+          </div>
+          <div class="content-about">
+            <h1 class="content-about__title">
+              Simple Solutions for Complex Connections
+            </h1>
+            <div class="content-about__container--text">
+              <p class="content-about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                fugit et voluptatum. Excepturi nulla quam placeat sapiente
+                doloremque odit dolore ad sunt, animi accusamus reprehenderit
+                commodi hic iste architecto velit.
+              </p>
+            </div>
+            <div class="content-about--chboxs">
+              <input type="checkbox" id="chbox1" class="chbox chbox_1" />
+              <label for="chbox1" class="label label_1"> High Analysis </label>
+              <input type="checkbox" id="chbox2" class="chbox chbox_2" />
+              <label for="chbox2" class="label label_2">
+                Certified Institute
+              </label>
+            </div>
+            <button class="learn-more">Learn More</button>
+          </div>
+          <div class="cards-about">
+            <div class="container-for__cards">
+              <div class="card">
+                <div class="card-number">0</div>
+                <div class="card-text">Happy clients</div>
+                <div class="triangle-shadow"></div>
+              </div>
+              <div class="card">
+                <div class="card-number">0</div>
+                <div class="card-text">Project completed</div>
+                <div class="triangle-shadow"></div>
+              </div>
+              <div class="card">
+                <div class="card-number">0</div>
+                <div class="card-text">Dedicated members</div>
+                <div class="triangle-shadow"></div>
+              </div>
+              <div class="card">
+                <div class="card-number">0</div>
+                <div class="card-text">Awards won</div>
+                <div class="triangle-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="container-for__content">
+            <div class="content-testimonial content-text">
+              <h2 class="content-title">you vision, our fututre</h2>
+              <h2 class="content-minor__title">Commited to People</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content-testimonial content-blue">
+              <img src="img/XMLID 49.png" alt="idea" />
+              <h2>Creative Ideas</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content-testimonial">
+              <img src="img/Group 179.png" alt="blog" />
+              <h2>Beautiful Blog</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content-testimonial">
+              <img src="img/Group 180.png" alt="friendly" />
+              <h2>User Friendly</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content-testimonial">
+              <img src="img/Group 181.png" alt="showcase" />
+              <h2>Perfect Showcase</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="content-testimonial">
+              <img src="img/Group 182.png" alt="easy to use" />
+              <h2>Easy to Use</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="testimonial-userreview">
+            <div class="userreview-title">
+              <h2>User's Reivew</h2>
+              <p>
+                Colloborate over projects with your team and clients optimized
+                for mobile and tablet
+              </p>
+            </div>
+            <div class="userreview-content">
+              <h1>What People Say About Us</h1>
+              <div class="userreview-title"></div>
+              <div class="userreview-content__about">
+                <div class="userreview-stars"></div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Debitis qui quo ut praesentium non commodi totam cum similique
+                  at neque rem culpa cupiditate, numquam consectetur assumenda
+                  laboriosam repudiandae voluptatem. Officiis.
+                </p>
+              </div>
+              <div>
+                <img src="img/Rectangle 26.png" alt="review" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pricing"></div>
+      </main>
+    </div>
+  </body>
 </html>
