@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lending Page</title>
     <script type="module" src="index.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a526e1cd51.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <img src="logo1.png" alt="logo" />
+        <img src="img/logo1.png" alt="logo" />
         <nav class="nav-menu">
           <ul>
             <li><a href="">Home</a></li>
@@ -42,7 +50,7 @@
             <button class="btn btn-trail">Free Trail</button>
           </div>
           <div class="img">
-            <img src="img1.png" alt="presentation" />
+            <img src="img/img1.png" alt="presentation" />
           </div>
         </div>
         <div class="about">
@@ -157,65 +165,230 @@
           </div>
         </div>
         <div class="testimonial">
-          <div class="container-for__content">
-            <div class="content-testimonial content-text">
-              <h2 class="content-title">you vision, our fututre</h2>
-              <h2 class="content-minor__title">Commited to People</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="content-testimonial content-blue">
-              <img src="img/XMLID 49.png" alt="idea" />
-              <h2>Creative Ideas</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="content-testimonial">
-              <img src="img/Group 179.png" alt="blog" />
-              <h2>Beautiful Blog</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="content-testimonial">
-              <img src="img/Group 180.png" alt="friendly" />
-              <h2>User Friendly</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="content-testimonial">
-              <img src="img/Group 181.png" alt="showcase" />
-              <h2>Perfect Showcase</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="content-testimonial">
-              <img src="img/Group 182.png" alt="easy to use" />
-              <h2>Easy to Use</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="testimonial-bigcontainer">
+            <div class="container">
+              <div class="content-testimonial content-text">
+                <h2 class="content-title">you vision, our fututre</h2>
+                <h2 class="content-minor__title">Commited to People</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="content-testimonial content-blue">
+                <img src="img/XMLID 49.png" alt="idea" />
+                <h2>Creative Ideas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="content-testimonial">
+                <img src="img/Group 179.png" alt="blog" />
+                <h2>Beautiful Blog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="content-testimonial">
+                <img src="img/Group 180.png" alt="friendly" />
+                <h2>User Friendly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="content-testimonial">
+                <img src="img/Group 181.png" alt="showcase" />
+                <h2>Perfect Showcase</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="content-testimonial">
+                <img src="img/Group 182.png" alt="easy to use" />
+                <h2>Easy to Use</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
             </div>
           </div>
           <div class="testimonial-userreview">
-            <div class="userreview-title">
-              <h2>User's Reivew</h2>
-              <p>
-                Colloborate over projects with your team and clients optimized
-                for mobile and tablet
-              </p>
-            </div>
-            <div class="userreview-content">
-              <h1>What People Say About Us</h1>
-              <div class="userreview-title"></div>
-              <div class="userreview-content__about">
-                <div class="userreview-stars"></div>
+            <div class="container">
+              <div class="userreview-title">
+                <h2>User's Reivew</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Debitis qui quo ut praesentium non commodi totam cum similique
-                  at neque rem culpa cupiditate, numquam consectetur assumenda
-                  laboriosam repudiandae voluptatem. Officiis.
+                  Colloborate over projects with your team and clients optimized
+                  for mobile and tablet
                 </p>
               </div>
-              <div>
-                <img src="img/Rectangle 26.png" alt="review" />
+              <div class="userreview-list">
+                <div class="userreview-bigcontainer" data-index="1">
+                  <div class="userreview-content">
+                    <div class="userreview-content__title">
+                      <h1>What People Say About Us</h1>
+                    </div>
+                    <div class="userreview-container__content">
+                      <div class="userreview-content__about">
+                        <p class="userreview-text__about">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Debitis qui quo ut praesentium non commodi totam
+                          cum similique at neque rem culpa cupiditate, numquam
+                          consectetur assumenda laboriosam repudiandae
+                          voluptatem. Officiis.
+                        </p>
+                        <div class="userreview-stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <div class="userreview-text">
+                        <h3>David Miller</h3>
+                        <h4>CEO,PParkview int, LTD</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="userreview-img">
+                    <img src="img/Rectangle 26.png" alt="review" />
+                    <div class="quotes">
+                      <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="userreview-bigcontainer" data-index="2">
+                  <div class="userreview-content">
+                    <div class="userreview-content__title">
+                      <h1>What People Say About Us</h1>
+                    </div>
+                    <div class="userreview-container__content">
+                      <div class="userreview-content__about">
+                        <p class="userreview-text__about">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Debitis qui quo ut praesentium non commodi totam
+                          cum similique at neque rem culpa cupiditate, numquam
+                          consectetur assumenda laboriosam repudiandae
+                          voluptatem. Officiis.
+                        </p>
+                      </div>
+                      <div class="userreview-stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <div class="userreview-text">
+                        <h3>David Miller</h3>
+                        <h4>CEO,PParkview int, LTD</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="userreview-img">
+                    <img src="img/Rectangle 26.png" alt="review" />
+                    <div class="quotes">
+                      <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="userreview-bigcontainer" data-index="3">
+                  <div class="userreview-content">
+                    <div class="userreview-content__title">
+                      <h1>What People Say About Us</h1>
+                    </div>
+                    <div class="userreview-container__content">
+                      <div class="userreview-content__about">
+                        <p class="userreview-text__about">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Debitis qui quo ut praesentium non commodi totam
+                          cum similique at neque rem culpa cupiditate, numquam
+                          consectetur assumenda laboriosam repudiandae
+                          voluptatem. Officiis.
+                        </p>
+                        <div class="userreview-stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                      <div class="userreview-text">
+                        <h3>David Miller</h3>
+                        <h4>CEO,PParkview int, LTD</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="userreview-img">
+                    <img src="img/Rectangle 26.png" alt="review" />
+                    <div class="quotes">
+                      <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="pricing"></div>
+        <div class="pricing">
+          <div class="container">
+            <div class="pricing-title">
+              <h1>
+                Without Extra Charge Choose<br />
+                Your Best Plan
+              </h1>
+              <div class="pticing-title__btns">
+                <button>Monthly</button>
+                <button class="disabled">Yearly</button>
+              </div>
+            </div>
+            <div class="pricing-cards">
+              <div class="pricing-card">
+                <div class="triangle">
+                  <i class="fa-solid fa-fire"></i>
+                </div>
+                <div class="pricing-card__title">
+                  <h3 class="pricing-edition">Standart</h3>
+                  <h4 class="pricing-price">$29</h4>
+                  <h4 class="pricing-pack">monthly pack</h4>
+                </div>
+                <div class="pricing-card__info">
+                  <ul>
+                    <li>256 GB SSD STORAGE</li>
+                    <li>FULL UI KIT DOWNLOAD</li>
+                    <li>PUBLIC API</li>
+                    <li>FULL UI PACK DOWNLOAD</li>
+                    <li>24/7 SUPPORT</li>
+                  </ul>
+                </div>
+                <button>INSTALL PACK</button>
+              </div>
+              <div class="pricing-card">
+                <div class="triangle">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="pricing-card__title">
+                  <h3 class="pricing-edition">Standart</h3>
+                  <h4 class="pricing-price">$39</h4>
+                  <h4 class="pricing-pack">monthly pack</h4>
+                </div>
+                <div class="pricing-card__info">
+                  <ul>
+                    <li>256 GB SSD STORAGE</li>
+                    <li>FULL UI KIT DOWNLOAD</li>
+                    <li>PUBLIC API</li>
+                    <li>FULL UI PACK DOWNLOAD</li>
+                    <li>24/7 SUPPORT</li>
+                  </ul>
+                </div>
+                <button>INSTALL PACK</button>
+              </div>
+            </div>
+            <div class="pricing-newsletter">
+              <div class="container">
+                <div class="newsletter-container">
+                  <h2 class="content-title">newsletter</h2>
+                  <h1 class="newsletter-big__message">
+                    We Offer Every Month 20% Off<br />
+                    For Our All Subscribers
+                  </h1>
+                  <form action="" class="newsletter-form">
+                    <input type="email" placeholder="Email Address" />
+                    <button class="btn btn-subscribe">Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
