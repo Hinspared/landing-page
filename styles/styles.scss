@@ -11,9 +11,11 @@ body {
   background: linear-gradient(0.25turn, rgb(78, 136, 174), rgb(22, 22, 150));
   color: aliceblue;
 }
+
 .hidden {
   opacity: 0;
 }
+
 h1 {
   font-weight: 600;
 }
@@ -103,6 +105,11 @@ button {
   outline: 0;
   padding: 15px;
 }
+button:hover {
+  background: #fdeee7;
+  color: #ff5a05;
+  transition: all ease 0.5s;
+}
 .btn {
   font-size: medium;
 }
@@ -148,7 +155,7 @@ button {
   background: white;
   box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06);
   border-radius: 10px;
-  bottom: -1050px;
+  bottom: -775px;
   left: 160px;
 }
 .newtransaction-contacts {
@@ -161,6 +168,9 @@ button {
 .newtransaction-contacts {
   padding: 0 20px 10px;
   cursor: pointer;
+}
+.active {
+  color: #ff5a05;
 }
 .new-transfer {
   display: grid;
@@ -236,17 +246,18 @@ button {
     margin: 0 10px 0 0;
     transition: all ease 0.5s;
   }
-  &::after {
-    position: absolute;
-    content: '';
-    background: url(../img/vector.png) center/cover no-repeat;
-    width: 13px;
-    height: 10px;
-    left: 7px;
-    top: 3px;
+  &:hover {
+    color: #ff5a05;
     transition: all ease 0.5s;
-    transform: scale(0);
   }
+}
+.vector-check {
+  width: 13px;
+  height: 10px;
+  transition: all ease 0.5s;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 3px;
 }
 .learn-more {
   padding: 15px 30px;
@@ -258,11 +269,6 @@ button {
   border-radius: 4px;
 }
 
-button:hover {
-  background: #fdeee7;
-  color: #ff5a05;
-  transition: all ease 0.5s;
-}
 .cards-about {
   width: 100%;
   height: 500px;
@@ -591,9 +597,11 @@ button:hover {
   &:hover {
     box-shadow: none;
     background: #ffd7b6;
+    transition: all ease 1s;
   }
   .newsletter-form {
-    border: 1px solid rgba(5, 0, 11, 0.1) ß;
+    border: 2px solid rgba(5, 0, 11, 0.1);
+    border-radius: 10px;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -608,4 +616,35 @@ button:hover {
       width: 60%;
     }
   }
+}
+.footer {
+  background: #04085952;
+}
+.footer-container {
+  padding: 10vh;
+  @include flexCenter;
+  gap: 0 10vw;
+}
+.logo {
+  align-self: flex-start;
+}
+.footer-item {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh 0;
+  li {
+    list-style: none;
+    margin-top: 2vh;
+    color: rgba(255, 255, 255, 0.358);
+  }
+}
+.fixed {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 3;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 2.5rem 1rem;
 }

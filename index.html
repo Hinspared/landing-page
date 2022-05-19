@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lending Page</title>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
     <link
       rel="stylesheet"
@@ -22,17 +22,17 @@
         <img src="img/logo1.png" alt="logo" />
         <nav class="nav-menu">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Pricing</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#pricing">Pricing</a></li>
           </ul>
         </nav>
         <button class="btn btn-primary"><span>Get Started</span></button>
       </header>
       <main>
-        <div class="home">
+        <div class="home section" id="home">
           <div class="container-home">
             <h2>inspiration technology.</h2>
             <h1>
@@ -53,7 +53,7 @@
             <img src="img/img1.png" alt="presentation" />
           </div>
         </div>
-        <div class="about">
+        <div class="about section hidden" id="about">
           <div class="logos__raw">
             <div class="logos__item">
               <img src="img/google.png" alt="google" />
@@ -111,7 +111,7 @@
                 <input
                   type="text"
                   class="new-transaction--sum"
-                  placeholder="0$"
+                  placeholder="0€"
                 />
                 <button class="btn btn-transfer">Send the transfer</button>
               </div>
@@ -130,41 +130,57 @@
               </p>
             </div>
             <div class="content-about--chboxs">
-              <input type="checkbox" id="chbox1" class="chbox chbox_1" />
-              <label for="chbox1" class="label label_1"> High Analysis </label>
-              <input type="checkbox" id="chbox2" class="chbox chbox_2" />
-              <label for="chbox2" class="label label_2">
-                Certified Institute
-              </label>
+              <div class="chbox-container">
+                <img
+                  src="../img/vector.png"
+                  alt="check"
+                  class="vector-check hidden"
+                />
+                <input type="checkbox" id="chbox1" class="chbox chbox_1" />
+                <label for="chbox1" class="label label_1">
+                  High Analysis
+                </label>
+              </div>
+              <div class="chbox-container">
+                <img
+                  src="../img/vector.png"
+                  alt="check"
+                  class="vector-check hidden"
+                />
+                <input type="checkbox" id="chbox2" class="chbox chbox_2" />
+                <label for="chbox2" class="label label_2">
+                  Certified Institute
+                </label>
+              </div>
             </div>
             <button class="learn-more">Learn More</button>
           </div>
           <div class="cards-about">
             <div class="container-for__cards">
               <div class="card">
-                <div class="card-number">0</div>
+                <div class="card-number clients">0</div>
                 <div class="card-text">Happy clients</div>
                 <div class="triangle-shadow"></div>
               </div>
               <div class="card">
-                <div class="card-number">0</div>
+                <div class="card-number projects">0</div>
                 <div class="card-text">Project completed</div>
                 <div class="triangle-shadow"></div>
               </div>
               <div class="card">
-                <div class="card-number">0</div>
+                <div class="card-number members">0</div>
                 <div class="card-text">Dedicated members</div>
                 <div class="triangle-shadow"></div>
               </div>
               <div class="card">
-                <div class="card-number">0</div>
+                <div class="card-number awards">0</div>
                 <div class="card-text">Awards won</div>
                 <div class="triangle-shadow"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial section hidden" id="testimonial">
           <div class="testimonial-bigcontainer">
             <div class="container">
               <div class="content-testimonial content-text">
@@ -318,7 +334,7 @@
             </div>
           </div>
         </div>
-        <div class="pricing">
+        <div class="pricing section hidden" id="pricing">
           <div class="container">
             <div class="pricing-title">
               <h1>
@@ -390,6 +406,45 @@
           </div>
         </div>
       </main>
+      <footer class="footer section hidden" id="contacts">
+        <div class="container footer-container">
+          <div class="logo">
+            <img src="img/logo1.png" alt="logo" />
+            <div class="logo-social__accounts">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+          </div>
+          <div class="footer-item short-links">
+            <h2>Short links</h2>
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Screenshots</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-item help-links">
+            <h2>Help links</h2>
+            <ul>
+              <li>How to download</li>
+              <li>How it works</li>
+              <li>Video tutorial</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="footer-item short-links">
+            <h2>Short links</h2>
+            <ul>
+              <li>App Store</li>
+              <li>Google Store</li>
+              <li>Download directory</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
