@@ -7,6 +7,10 @@ const labelEl = document.querySelectorAll('.label');
 const btnTransferEl = document.querySelector('.btn-transfer');
 const contactsEl = document.querySelector('.newtransaction-contacts');
 const headerEl = document.querySelector('.header');
+const slideContainer = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const btnSlLeft = document.querySelector('.btn-slider__left');
+const btnSlRight = document.querySelector('.btn-slider__right');
 
 // Count animation from start to end
 const animateValue = (obj, start, end, duration) => {
@@ -31,12 +35,12 @@ const revealSection = function (entries, observer) {
   if (!entry.isIntersecting) return;
 
   entry.target.classList.remove('hidden');
-  // Reveal section ABOUT and animate count in cards
   if (entry.target.classList.contains('home')) {
     btn.classList.add('hidden');
   } else {
     btn.classList.remove('hidden');
   }
+  // Reveal section ABOUT and animate count in cards
   if (entry.target.classList.contains('about')) {
     cardNumberEl.forEach((card) => {
       if (card.classList.contains('clients')) animateValue(card, 0, 50, 5);
@@ -118,6 +122,38 @@ btn.addEventListener('click', function () {
   headerEl.scrollIntoView({ behavior: 'smooth' });
 });
 // Slider
-
+const slider = () => {
+  let curSlide = 0;
+  const maxSlide = slides.length;
+  // Function
+  const goToSlide = function (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+  const nextSlide = () => {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+    goToSlide(curSlide);
+  };
+  const PreviusSlide = () => {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+  };
+  btnSlLeft.addEventListener('click', PreviusSlide);
+  btnSlRight.addEventListener('click', nextSlide);
+  const init = () => {
+    goToSlide(0);
+  };
+  init();
+};
+slider();
 // Change plans monthly/yearly
 // Add subscribe function

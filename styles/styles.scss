@@ -370,28 +370,29 @@ button:hover {
   color: black;
   margin-top: -10px;
 }
-.userreview-title {
-  padding: 30px;
+.slider {
+  // padding: 30px;
   text-align: center;
-}
-.userreview-list {
-  height: 509px;
-  display: inline-flex;
+  position: relative;
   overflow: hidden;
-  width: 110%;
+  display: inline-flex;
+  height: 509px;
+  width: 100%;
 }
-.userreview-bigcontainer {
+
+.slide {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 150px;
+  position: absolute;
+  transition: transform 1s;
 }
 .userreview-content {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  width: 650px;
+  width: 550px;
   height: 400px;
   h1 {
+    margin-left: 95px;
     text-align: left;
   }
 }
@@ -428,7 +429,7 @@ button:hover {
 }
 .userreview-stars {
   position: absolute;
-  right: 100px;
+  right: 30px;
   padding: 20px;
   font-size: 20px;
   .checked {
