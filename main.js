@@ -139,7 +139,7 @@ const slider = () => {
     }
     goToSlide(curSlide);
   };
-  const PreviusSlide = () => {
+  const previusSlide = () => {
     if (curSlide === 0) {
       curSlide = maxSlide - 1;
     } else {
@@ -147,7 +147,7 @@ const slider = () => {
     }
     goToSlide(curSlide);
   };
-  btnSlLeft.addEventListener('click', PreviusSlide);
+  btnSlLeft.addEventListener('click', previusSlide);
   btnSlRight.addEventListener('click', nextSlide);
   const init = () => {
     goToSlide(0);
@@ -156,4 +156,42 @@ const slider = () => {
 };
 slider();
 // Change plans monthly/yearly
+const changePlan = () => {
+  const btnM = document.querySelector('.btn__monthly');
+  const btnY = document.querySelector('.btn__yearly');
+  const [price1, price2] = document.querySelectorAll('.pricing-price');
+  const [pack1, pack2] = document.querySelectorAll('.pricing-pack');
+  console.log(price1.innerHTML, pack1.innerHTML);
+  // Function to toggle monthly/yearly
+  const togglePlan = () => {
+    if (btnM.classList.contains('disabled')) {
+      price1.innerHTML = '$290';
+      price2.innerHTML = '$390';
+      // if ((price1.innerHTML = '$290') && (price2.innerHTML = '$390')) return;
+      // price1.innerHTML = `$${parseInt(price1.innerHTML.slice(1)) * 10}`;
+      // price2.innerHTML = `$${parseFloat(price2.innerHTML.slice(1) * 10)}`;
+      pack1.innerHTML = 'yearly pack';
+      pack2.innerHTML = 'yearly pack';
+    } else {
+      price1.innerHTML = '$29';
+      price2.innerHTML = `$39`;
+      pack1.innerHTML = 'monthly pack';
+      pack2.innerHTML = 'monthly pack';
+    }
+  };
+  const toggleMonthly = () => {
+    btnM.classList.remove('disabled');
+    btnY.classList.add('disabled');
+    togglePlan();
+  };
+  const toggleYearly = () => {
+    btnM.classList.add('disabled');
+    btnY.classList.remove('disabled');
+    togglePlan();
+  };
+
+  btnM.addEventListener('click', toggleMonthly);
+  btnY.addEventListener('click', toggleYearly);
+};
+changePlan();
 // Add subscribe function

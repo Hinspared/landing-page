@@ -519,6 +519,31 @@ button:hover {
   text-align: left;
 }
 
+.btns__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  margin-left: 100px;
+  gap: 0.5rem;
+}
+
+.btn-slider__left {
+  border-radius: 50% 50% 0 50%;
+  width: 3.5rem;
+}
+
+.btn-slider__right {
+  border-radius: 50% 50% 50% 0;
+  width: 3.5rem;
+}
+
 .userreview-container__content {
   margin-top: 150px;
   text-align: left;

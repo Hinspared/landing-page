@@ -371,7 +371,6 @@ button:hover {
   margin-top: -10px;
 }
 .slider {
-  // padding: 30px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -395,6 +394,20 @@ button:hover {
     margin-left: 95px;
     text-align: left;
   }
+}
+.btns__slider {
+  @include flexCenter;
+  width: 10rem;
+  margin-left: 100px;
+  gap: 0.5rem;
+}
+.btn-slider__left {
+  border-radius: 50% 50% 0 50%;
+  width: 3.5rem;
+}
+.btn-slider__right {
+  border-radius: 50% 50% 50% 0;
+  width: 3.5rem;
 }
 .userreview-container__content {
   margin-top: 150px;
