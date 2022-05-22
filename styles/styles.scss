@@ -155,7 +155,7 @@ button:hover {
   background: white;
   box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06);
   border-radius: 10px;
-  bottom: -775px;
+  bottom: -783px;
   left: 160px;
 }
 .newtransaction-contacts {
@@ -640,7 +640,22 @@ button:hover {
   gap: 0 10vw;
 }
 .logo {
+  @include flexCenter;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 10rem;
   align-self: flex-start;
+}
+.logo-social__accounts {
+  @include flexCenter;
+  gap: 1rem;
+  margin: auto;
+  align-self: flex-start;
+}
+.fa-brands {
+  background: #fdeee752;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 .footer-item {
   height: 20vh;

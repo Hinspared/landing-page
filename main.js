@@ -154,7 +154,6 @@ const slider = () => {
   };
   init();
 };
-slider();
 // Change plans monthly/yearly
 const changePlan = () => {
   const btnM = document.querySelector('.btn__monthly');
@@ -193,5 +192,25 @@ const changePlan = () => {
   btnM.addEventListener('click', toggleMonthly);
   btnY.addEventListener('click', toggleYearly);
 };
-changePlan();
 // Add subscribe function
+const subscribe = () => {
+  const btn = document.querySelector('.btn__subscribe');
+  const inputField = document.querySelector('.input__subscribe');
+  const check = /\S+@\S+\.\S+/;
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!inputField.value.toLowerCase().match(check)) {
+      alert('Wrong email');
+    } else {
+      alert('nice');
+    }
+    inputField.value = '';
+  });
+};
+
+const init = () => {
+  slider();
+  changePlan();
+  subscribe();
+};
+init();

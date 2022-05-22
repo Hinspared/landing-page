@@ -211,7 +211,7 @@ button:hover {
   -webkit-box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06);
           box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06);
   border-radius: 10px;
-  bottom: -775px;
+  bottom: -783px;
   left: 160px;
 }
 
@@ -867,8 +867,43 @@ button:hover {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  width: 10rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.logo-social__accounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fa-brands {
+  background: #fdeee752;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 .footer-item {
